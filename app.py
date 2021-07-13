@@ -32,7 +32,7 @@ def about():
 
 @app.route('/subcribe')
 def subcribe():
-	title = "Subcribe My News Letter"
+	title = "Subcribe My Newsletter"
 	return render_template("subcribe.html", title=title)
 
 @app.route('/form', methods=["POST"])
@@ -58,7 +58,7 @@ def form():
 			first_name=first_name,
 			last_name=last_name,
 			email=email,
-			title="Subcribe My News Letter")
+			title="Subcribe My Newsletter")
 
 	subcribers.append(f"{first_name} {last_name} | {email}")
 
